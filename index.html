@@ -4,30 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Project-1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <div class="wrapper">
+      <div class="wrapper header-content">
         <nav>
-          <ul>
+          <ul class="topBar">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="blog.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
-        <h1>Under the sea</h1>
+        <div class="content-container">
+          <h1>Under the sea</h1>
+          <img
+            src="./under-the-sea-assets/home-box-header.png"
+            alt="three goldfishes are swimming"
+          />
+        </div>
       </div>
     </header>
 
     <!-- aside -->
     <main>
       <aside>
-        <div class="wrapper">
-          <h2>What is under the sea?</h2>
+        <div class="wrapper brief-intro">
+          <h3>What is under the sea?</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
             nisi incidunt pariatur earum eveniet, hic, fugiat beatae molestiae
@@ -40,20 +51,26 @@
 
       <!-- section -->
       <section id="about">
-        <div class="wrapper">
-          <div class="item">
-            <img src="" alt="" />
-            <h3>New additions</h3>
+        <div class="wrapper news">
+          <div class="img-box-1">
+            <img
+              src="./under-the-sea-assets/left-image.jpg"
+              alt="more than 20 tropical fishes are swimming"
+            />
+          </div>
+          <div class="text-box-1">
+            <h4>New additions</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio quas voluptatibus harum veritatis earum nemo
               necessitatibus rem quo doloribus atque tempora consequuntur
               provident cum, consectetur nobis, modi excepturi quibusdam magnam.
             </p>
-            <button>READ MORE</button>
+            <button>Read more</button>
           </div>
-          <div class="item">
-            <h3>meet real nemo</h3>
+
+          <div class="text-box-2">
+            <h4>meet real nemo</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
               sequi tempore, ducimus saepe libero dignissimos repudiandae
@@ -61,7 +78,12 @@
               dolore fuga nam blanditiis! Molestiae, vel?
             </p>
             <button>READ MORE</button>
-            <img src="" alt="" />
+          </div>
+          <div class="img-box-2">
+            <img
+              src="./under-the-sea-assets/right-image.jpg"
+              alt="nemo is swimming"
+            />
           </div>
         </div>
       </section>
