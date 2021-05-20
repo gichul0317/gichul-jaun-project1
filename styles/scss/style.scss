@@ -8,7 +8,7 @@ $darkGrey: #0c1423;
 html {
   font-size: 125%;
   font-family: 'Barlow', sans-serif;
-  // color: $white;
+  color: $white;
 }
 img {
   display: block;
@@ -339,4 +339,5 @@ footer .wrapper {
 .footer p {
   margin: 0;
   padding: 5px;
+  color: $darkGrey;
 }
