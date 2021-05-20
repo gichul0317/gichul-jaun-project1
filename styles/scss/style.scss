@@ -13,12 +13,16 @@ html {
 img {
   display: block;
 }
+footer {
+  margin: 0;
+  padding: 0;
+}
 .wrapper {
   max-width: 1200px;
   width: 100%;
   height: 60vh;
   margin: 0 auto;
-  border: 1px solid;
+  // border: 1px solid;
   // margin-bottom: 10px;
 }
 
@@ -244,3 +248,95 @@ img {
 }
 
 // aside
+.extra-info {
+  background-color: $darkGrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+.extra-info h4 {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+// banner-image
+figure .wrapper {
+  height: 100%;
+}
+.banner-image img {
+  width: 100%;
+  height: 80%;
+}
+
+// monthly-event
+.monthly-event {
+  background-color: $darkGrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.monthly-event .img-container {
+  width: 40%;
+}
+.monthly-event .img-container img {
+  box-shadow: 30px 30px $blue;
+}
+.monthly-event .content-container {
+  width: 60%;
+}
+.monthly-event .content-container h3 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.monthly-event .content-container p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.monthly-event .content-container button {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  background-color: $blue;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: $white;
+    cursor: pointer;
+  }
+}
+
+// gallery
+.gallery {
+  background-color: $spruce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .img-container {
+  display: flex;
+  justify-content: space-around;
+}
+.gallery .img-container img {
+  width: 25%;
+}
+
+// footer
+footer .wrapper {
+  height: 100%;
+}
+.footer {
+  background-color: $blue;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.footer p {
+  margin: 0;
+  padding: 5px;
+}

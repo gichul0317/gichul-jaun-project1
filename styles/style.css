@@ -285,12 +285,16 @@ img {
   display: block;
 }
 
+footer {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 100%;
   height: 60vh;
   margin: 0 auto;
-  border: 1px solid;
 }
 
 .header-content {
@@ -497,4 +501,126 @@ img {
   position: absolute;
   bottom: -20px;
   right: 0;
+}
+
+.extra-info {
+  background-color: #0c1423;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem;
+}
+
+.extra-info h4 {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+figure .wrapper {
+  height: 100%;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 80%;
+}
+
+.monthly-event {
+  background-color: #0c1423;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.monthly-event .img-container {
+  width: 40%;
+}
+
+.monthly-event .img-container img {
+  -webkit-box-shadow: 30px 30px #86e0f9;
+          box-shadow: 30px 30px #86e0f9;
+}
+
+.monthly-event .content-container {
+  width: 60%;
+}
+
+.monthly-event .content-container h3 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.monthly-event .content-container p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.monthly-event .content-container button {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  background-color: #86e0f9;
+  border: none;
+}
+.monthly-event .content-container button:hover, .monthly-event .content-container button:focus {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gallery {
+  background-color: #0f614e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery .img-container img {
+  width: 25%;
+}
+
+footer .wrapper {
+  height: 100%;
+}
+
+.footer {
+  background-color: #86e0f9;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.footer p {
+  margin: 0;
+  padding: 5px;
 }
