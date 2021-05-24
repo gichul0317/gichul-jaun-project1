@@ -100,42 +100,69 @@
               </p>
             </div>
             <div class="comments">
+              <h4>Comments:</h4>
               <div class="comment-1">
-                <img
-                  src="./under-the-sea-assets/comment-1.jpg"
-                  alt="Jeremy's profile picture"
-                />
-                <p>Tuesday October 9th, 2018 by Jeremy</p>
+                <div>
+                  <img
+                    src="./under-the-sea-assets/comment-1.jpg"
+                    alt="Jeremy's profile picture"
+                  />
+                </div>
+                <div class="text-box-1">
+                  <p>Tuesday October 9th, 2018 by Jeremy</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Fugit molestias veritatis laborum sunt rem? Perferendis
+                    eligendi amet natus ratione porro ea velit. Autem possimus
+                    libero distinctio rem reprehenderit. Corrupti, iusto!
+                  </p>
+                </div>
               </div>
               <div class="comment-2">
-                <img
-                  src="./under-the-sea-assets/comment-2.jpg"
-                  alt="Julia's profile picture"
-                />
-                <p>Wednesday October 10th, 2018 by Julia</p>
+                <div>
+                  <img
+                    src="./under-the-sea-assets/comment-2.jpg"
+                    alt="Julia's profile picture"
+                  />
+                </div>
+                <div class="text-box-2">
+                  <p>Wednesday October 10th, 2018 by Julia</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia voluptates hic commodi nobis sed. Sunt quod
+                    obcaecati maiores ut impedit eius, aspernatur beatae officia
+                    rerum libero soluta aliquid totam dolorem.
+                  </p>
+                </div>
               </div>
             </div>
             <form action="#nth">
-              <label for="user-name" class="visuallyHidden"></label>
-              <input
-                type="text"
-                id="user-name"
-                name="user-name"
-                value="user-name"
-              />
-              <label for="user-email" class="visuallyHidden"></label>
-              <input
-                type="email"
-                id="user-email"
-                name="user-email"
-                value="user-email"
-              />
-              <textarea
-                name="comment"
-                id="comment"
-                cols="30"
-                rows="10"
-              ></textarea>
+              <fieldset class="user-info">
+                <label for="user-name" class="visuallyHidden"></label>
+                <input
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Name"
+                  required
+                />
+                <label for="user-email" class="visuallyHidden"></label>
+                <input
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Email address"
+                  required
+                />
+              </fieldset>
+              <fieldset class="text-area">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </fieldset>
               <button type="submit">POST COMMENT</button>
             </form>
           </div>

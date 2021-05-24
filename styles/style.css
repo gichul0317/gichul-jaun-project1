@@ -804,6 +804,7 @@ footer {
   line-height: 1.5rem;
 }
 .blog .grid-wrapper .right-section .comments {
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,15 +816,54 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.blog .grid-wrapper .right-section .comments h4 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 0 0 40px;
+}
 .blog .grid-wrapper .right-section .comments .comment-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 100px;
+}
+.blog .grid-wrapper .right-section .comments .comment-1 .text-box-1 p {
+  margin: 0 25px 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .blog .grid-wrapper .right-section .comments .comment-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
+}
+.blog .grid-wrapper .right-section .comments .comment-2 .text-box-2 p {
+  margin: 0 25px 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.blog .grid-wrapper .right-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog .grid-wrapper .right-section form fieldset {
+  border: none;
+}
+.blog .grid-wrapper .right-section form .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blog footer .wrapper {
