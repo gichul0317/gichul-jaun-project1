@@ -445,6 +445,7 @@ footer {
   }
 }
 
+// main: grid-section
 .blog main .wrapper {
   height: 100%;
   background-color: $darkGrey;
@@ -556,6 +557,46 @@ footer {
     .user-info {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 20px;
+      input:nth-of-type(1) {
+        width: calc(50% - 35px);
+        margin-right: 35px;
+        padding: 15px;
+        border: none;
+        border-bottom: 3px solid $blue;
+        background-color: transparent;
+      }
+      input {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-bottom: 3px solid $blue;
+        background-color: transparent;
+      }
+    }
+    .text-area {
+      textarea {
+        border: 3px solid $blue;
+        background-color: transparent;
+        padding: 15px;
+        resize: none;
+      }
+    }
+    ::placeholder {
+      color: $white;
+    }
+    button {
+      margin: 25px 20px 80px;
+      padding: 5px;
+      background-color: $spruce;
+      border: none;
+      &:hover,
+      &:focus {
+        background-color: $white;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -569,6 +610,142 @@ footer {
   text-align: center;
 }
 .blog .footer p {
+  margin: 0;
+  padding: 5px;
+  font-family: $p-font-family;
+  font-size: $p-font-size;
+  line-height: $p-line-height;
+  color: $darkGrey;
+}
+
+// contact (contact.html)
+.contact .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  border: 1px solid;
+  // margin-bottom: 10px;
+}
+
+// header: header-content
+.contact .header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../under-the-sea-assets/contact-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact .topBar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  z-index: 20;
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+  li:nth-child(4) a {
+    color: $blue;
+  }
+  li:nth-child(4) a {
+    margin-right: 100px;
+  }
+}
+.contact .header-content .content-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    width: 40%;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    text-transform: uppercase;
+    text-align: center;
+    // margin: 0;
+    // padding: 0;
+  }
+  form {
+    width: 62%;
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    box-shadow: -30px 30px $blue;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    background-color: $spruce;
+    fieldset {
+      border: none;
+    }
+    .user-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      input:nth-of-type(1) {
+        width: calc(50% - 35px);
+        margin-right: 35px;
+        padding: 15px;
+        border: none;
+        border-bottom: 3px solid $blue;
+        background-color: transparent;
+      }
+      input {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid $blue;
+        background-color: transparent;
+      }
+    }
+    .text-area {
+      textarea {
+        border: 3px solid $blue;
+        background-color: transparent;
+        padding: 15px;
+        resize: none;
+      }
+    }
+    button {
+      margin: 25px 20px 50px;
+      padding: 5px;
+      background-color: $darkGrey;
+      border: none;
+      &:hover,
+      &:focus {
+        background-color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// main: section
+
+// footer: footer
+.contact footer .wrapper {
+  height: 100%;
+}
+.contact .footer {
+  background-color: $blue;
+  text-align: center;
+}
+.contact .footer p {
   margin: 0;
   padding: 5px;
   font-family: $p-font-family;
