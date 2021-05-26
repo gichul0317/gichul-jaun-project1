@@ -1,0 +1,42 @@
+@media (max-width: 1199px) {
+  .contact .wrapper {
+    max-width: 940px;
+  }
+
+  .contact .header-content .content-container {
+    form {
+      width: 55%;
+      right: 30px;
+      .text-area {
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .contact .wrapper {
+    max-width: 480px;
+  }
+
+  .contact .header-content {
+    .topBar {
+      justify-content: center;
+      padding: 0;
+      li:nth-child(4) a {
+        margin-right: 0;
+      }
+    }
+    .content-container {
+      justify-content: flex-start;
+      h2 {
+        margin: 0 50px;
+      }
+      form {
+        position: absolute;
+      }
+    }
+  }
+}
