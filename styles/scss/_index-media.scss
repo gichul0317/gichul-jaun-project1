@@ -1,0 +1,181 @@
+@media (max-width: 1199px) {
+  .home .wrapper {
+    max-width: 940px;
+  }
+
+  .home .header-content {
+    .content-container {
+      img {
+        top: 300px;
+      }
+    }
+  }
+
+  .home .news {
+    .img-box-1 {
+      img {
+        width: 90%;
+      }
+    }
+    .text-box-1 {
+      padding: 0;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .text-box-2 {
+      padding: 0;
+      margin-top: 25px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .img-box-2 {
+      img {
+        width: 90%;
+        bottom: 0;
+      }
+    }
+  }
+
+  .home .extra-info {
+    div:nth-of-type(1) {
+      margin-right: 20px;
+    }
+  }
+
+  .home .monthly-event {
+    .img-container {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  .home .wrapper {
+    max-width: 480px;
+  }
+
+  .home .header-content {
+    .topBar {
+      justify-content: center;
+      padding: 0;
+      li:nth-child(4) a {
+        margin-right: 0;
+      }
+    }
+
+    .content-container {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .home .brief-intro {
+    p {
+      margin: 0 50px;
+    }
+  }
+
+  .home .news {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'text-box-1' 'text-box-2';
+    gap: 0;
+    height: 100%;
+    .img-box-1 {
+      display: none;
+    }
+    .img-box-2 {
+      display: none;
+    }
+    .text-box-1 {
+      margin: 50px 20px;
+      text-align: center;
+      padding: 0;
+      button {
+        margin-top: 20px;
+      }
+    }
+    .text-box-2 {
+      margin: 20px 20px 50px;
+      text-align: center;
+      padding: 0;
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .home .extra-info {
+    height: 100%;
+    flex-direction: column;
+    div:nth-of-type(1) {
+      margin-right: 0;
+    }
+  }
+
+  .home figure .wrapper {
+    height: 30vh;
+    img {
+      height: 100%;
+    }
+  }
+
+  .home .monthly-event {
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+    .img-container {
+      display: none;
+    }
+    .content-container {
+      text-align: center;
+      height: 100%;
+      button {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .home .gallery {
+    .img-container {
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .home .wrapper {
+    max-width: 320px;
+  }
+
+  .home .header-content {
+    .topBar {
+      a {
+        padding: 0.4rem;
+      }
+    }
+    .content-container {
+      h1 {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .home .brief-intro {
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .home figure .wrapper {
+    height: 20vh;
+  }
+}

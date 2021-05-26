@@ -407,10 +407,10 @@ footer {
 }
 .blog .grid-wrapper {
   display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 30% calc(70% - 50px);
+  grid-auto-rows: 1fr;
   grid-template-areas: 'left-section right-section';
-  gap: 0 50px;
+  column-gap: 50px;
 }
 .blog .grid-wrapper .left-section {
   grid-area: left-section;
@@ -446,8 +446,8 @@ footer {
   }
 }
 .blog .grid-wrapper .right-section {
+  grid-area: right-section;
   .text-box {
-    grid-area: right-section;
     margin-top: 330px;
     margin-left: 16.5px;
     border-left: 5px solid $blue;
@@ -741,3 +741,6 @@ footer {
   line-height: $p-line-height;
   color: $darkGrey;
 }
+
+@import 'index-media';
+@import 'blog-media';
