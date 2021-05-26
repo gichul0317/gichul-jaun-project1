@@ -1094,10 +1094,15 @@ footer {
 }
 
 .contact .contact-info {
+  height: 100%;
   background-color: #0c1423;
 }
 .contact .contact-info .text-box {
+  height: 100%;
   padding: 50px;
+}
+.contact .contact-info .text-box a {
+  color: #fff;
 }
 .contact .contact-info .text-box h5:nth-of-type(1) {
   font-size: 1.1rem;
@@ -1116,6 +1121,9 @@ footer {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0;
+}
+.contact .contact-info .text-box p:nth-of-type(4) {
+  margin-bottom: 100px;
 }
 
 .contact footer .wrapper {
@@ -1456,8 +1464,29 @@ footer {
   }
   .contact .header-content .content-container h2 {
     margin: 0 50px;
+    text-align: left;
   }
   .contact .header-content .content-container form {
-    position: absolute;
+    top: 490px;
+    right: 0;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .contact .contact-info .text-box h5:nth-of-type(1) {
+    margin-top: 550px;
+  }
+}
+@media (max-width: 460px) {
+  .contact .wrapper {
+    max-width: 320px;
+  }
+
+  .contact .header-content .topBar a {
+    padding: 0.4rem;
+  }
+  .contact .header-content .content-container h2 {
+    margin: 0 10px;
   }
 }

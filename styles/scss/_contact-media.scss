@@ -33,9 +33,40 @@
       justify-content: flex-start;
       h2 {
         margin: 0 50px;
+        text-align: left;
       }
       form {
-        position: absolute;
+        top: 490px;
+        right: 0;
+        width: 100%;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .contact .contact-info {
+    .text-box {
+      h5:nth-of-type(1) {
+        margin-top: 550px;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .contact .wrapper {
+    max-width: 320px;
+  }
+
+  .contact .header-content {
+    .topBar {
+      a {
+        padding: 0.4rem;
+      }
+    }
+    .content-container {
+      h2 {
+        margin: 0 10px;
       }
     }
   }
