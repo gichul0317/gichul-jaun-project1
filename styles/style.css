@@ -646,8 +646,7 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
-.blog .topBar {
+.blog .header-content .topBar {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,22 +658,21 @@ footer {
   margin: 0;
   z-index: 20;
 }
-.blog .topBar a {
+.blog .header-content .topBar a {
   text-decoration: none;
   display: block;
   padding: 1rem;
   color: #fff;
 }
-.blog .topBar a:hover, .blog .topBar a:focus {
+.blog .header-content .topBar a:hover, .blog .header-content .topBar a:focus {
   color: #86e0f9;
 }
-.blog .topBar li:nth-child(3) a {
+.blog .header-content .topBar li:nth-child(3) a {
   color: #86e0f9;
 }
-.blog .topBar li:nth-child(4) a {
+.blog .header-content .topBar li:nth-child(4) a {
   margin-right: 100px;
 }
-
 .blog .header-content .content-container {
   position: absolute;
   width: 100%;
@@ -720,7 +718,6 @@ footer {
      -moz-column-gap: 50px;
           column-gap: 50px;
 }
-
 .blog .grid-wrapper .left-section {
   grid-area: left-section;
 }
@@ -754,7 +751,6 @@ footer {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
 .blog .grid-wrapper .right-section {
   grid-area: right-section;
 }
@@ -906,7 +902,6 @@ footer {
   background-color: #86e0f9;
   text-align: center;
 }
-
 .blog .footer p {
   margin: 0;
   padding: 5px;
@@ -937,8 +932,7 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
-.contact .topBar {
+.contact .header-content .topBar {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,22 +944,21 @@ footer {
   margin: 0;
   z-index: 20;
 }
-.contact .topBar a {
+.contact .header-content .topBar a {
   text-decoration: none;
   display: block;
   padding: 1rem;
   color: #fff;
 }
-.contact .topBar a:hover, .contact .topBar a:focus {
+.contact .header-content .topBar a:hover, .contact .header-content .topBar a:focus {
   color: #86e0f9;
 }
-.contact .topBar li:nth-child(4) a {
+.contact .header-content .topBar li:nth-child(4) a {
   color: #86e0f9;
 }
-.contact .topBar li:nth-child(4) a {
+.contact .header-content .topBar li:nth-child(4) a {
   margin-right: 100px;
 }
-
 .contact .header-content .content-container {
   position: absolute;
   width: 100%;
@@ -1109,7 +1102,6 @@ footer {
   background-color: #86e0f9;
   text-align: center;
 }
-
 .contact .footer p {
   margin: 0;
   padding: 5px;
