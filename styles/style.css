@@ -317,8 +317,7 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
-.home .topBar {
+.home .header-content .topBar {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,22 +329,21 @@ footer {
   margin: 0;
   z-index: 20;
 }
-.home .topBar a {
+.home .header-content .topBar a {
   text-decoration: none;
   display: block;
   padding: 1rem;
   color: #fff;
 }
-.home .topBar a:hover, .home .topBar a:focus {
+.home .header-content .topBar a:hover, .home .header-content .topBar a:focus {
   color: #86e0f9;
 }
-.home .topBar li:nth-child(1) a {
+.home .header-content .topBar li:nth-child(1) a {
   color: #86e0f9;
 }
-.home .topBar li:nth-child(4) a {
+.home .header-content .topBar li:nth-child(4) a {
   margin-right: 100px;
 }
-
 .home .header-content .content-container {
   position: absolute;
   width: 100%;
@@ -423,12 +421,10 @@ footer {
   grid-template-areas: "img-box-1 text-box-1" "text-box-2 img-box-2";
   gap: 0 30px;
 }
-
 .home .news .img-box-1 {
   grid-area: img-box-1;
   position: relative;
 }
-
 .home .news .img-box-1 img {
   width: 80%;
   -webkit-box-shadow: 30px 30px #86e0f9;
@@ -436,26 +432,22 @@ footer {
   position: absolute;
   top: -30px;
 }
-
 .home .news .text-box-1 {
   grid-area: text-box-1;
   padding: 1rem;
   margin-right: 50px;
 }
-
 .home .news .text-box-1 h4 {
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin: 0;
 }
-
 .home .news .text-box-1 p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
 .home .news .text-box-1 button {
   text-transform: uppercase;
   font-size: 1rem;
@@ -470,27 +462,23 @@ footer {
   cursor: pointer;
   color: #0c1423;
 }
-
 .home .news .text-box-2 {
   grid-area: text-box-2;
   text-align: right;
   padding: 1rem;
   margin-left: 50px;
 }
-
 .home .news .text-box-2 h4 {
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin: 0;
 }
-
 .home .news .text-box-2 p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
 .home .news .text-box-2 button {
   text-transform: uppercase;
   font-size: 1rem;
@@ -505,12 +493,10 @@ footer {
   cursor: pointer;
   color: #0c1423;
 }
-
 .home .news .img-box-2 {
   grid-area: img-box-2;
   position: relative;
 }
-
 .home .news .img-box-2 img {
   width: 80%;
   -webkit-box-shadow: -30px 30px #86e0f9;
@@ -533,12 +519,10 @@ footer {
           align-items: center;
   padding: 2.5rem;
 }
-
 .home .extra-info h4 {
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
-
 .home .extra-info h4 i {
   color: #0c1423;
   background-color: #86e0f9;
@@ -552,7 +536,7 @@ footer {
 
 .home .banner-image img {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .home .monthly-event {
@@ -568,32 +552,26 @@ footer {
           align-items: center;
   padding: 2rem;
 }
-
 .home .monthly-event .img-container {
   width: 40%;
 }
-
 .home .monthly-event .img-container img {
   -webkit-box-shadow: 30px 30px #86e0f9;
           box-shadow: 30px 30px #86e0f9;
 }
-
 .home .monthly-event .content-container {
   width: 60%;
 }
-
 .home .monthly-event .content-container h3 {
   font-size: 1.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .home .monthly-event .content-container p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
 .home .monthly-event .content-container button {
   text-transform: uppercase;
   font-size: 1rem;
@@ -619,7 +597,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .home .gallery .img-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,7 +604,6 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .home .gallery .img-container img {
   width: 25%;
 }
@@ -640,7 +616,6 @@ footer {
   background-color: #86e0f9;
   text-align: center;
 }
-
 .home .footer p {
   margin: 0;
   padding: 5px;
@@ -1247,9 +1222,6 @@ footer {
 
   .home figure .wrapper {
     height: 30vh;
-  }
-  .home figure .wrapper img {
-    height: 100%;
   }
 
   .home .monthly-event {
