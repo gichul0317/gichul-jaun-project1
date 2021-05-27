@@ -368,7 +368,7 @@ footer {
 .home .header-content .content-container img {
   width: 50%;
   position: absolute;
-  top: 200px;
+  top: 40%;
   right: 0;
 }
 
@@ -430,7 +430,7 @@ footer {
   -webkit-box-shadow: 30px 30px #86e0f9;
           box-shadow: 30px 30px #86e0f9;
   position: absolute;
-  top: -30px;
+  top: -10%;
 }
 .home .news .text-box-1 {
   grid-area: text-box-1;
@@ -502,7 +502,7 @@ footer {
   -webkit-box-shadow: -30px 30px #86e0f9;
           box-shadow: -30px 30px #86e0f9;
   position: absolute;
-  bottom: -20px;
+  bottom: -10%;
   right: 0;
 }
 
@@ -861,6 +861,7 @@ footer {
   color: #fff;
 }
 .blog .grid-wrapper .right-section form .text-area textarea {
+  width: 100%;
   border: 3px solid #86e0f9;
   background-color: transparent;
   padding: 15px;
@@ -1028,6 +1029,7 @@ footer {
   color: #fff;
 }
 .contact .header-content .content-container form .text-area textarea {
+  width: 100%;
   border: 3px solid #86e0f9;
   background-color: transparent;
   padding: 15px;
