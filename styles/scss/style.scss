@@ -1,4 +1,5 @@
 @import 'setup';
+@import 'index-style-js';
 
 $blue: #86e0f9;
 $spruce: #0f614e;
@@ -50,7 +51,6 @@ footer {
   background-size: cover;
   background-position: center;
   .topBar {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -70,11 +70,11 @@ footer {
       color: $blue;
     }
     li:nth-child(4) a {
-      margin-right: 100px;
+      margin-right: 4rem;
     }
   }
   .content-container {
-    position: absolute;
+    // position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -88,9 +88,9 @@ footer {
       margin: 0 50px;
     }
     img {
-      width: 50%;
+      width: 45%;
       position: absolute;
-      top: 40%;
+      top: 0;
       right: 0;
     }
   }
@@ -104,8 +104,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3.5rem;
   h3 {
-    margin-top: 15%;
     font-size: $h3-font-size;
     letter-spacing: $h3-letter-spacing;
   }
@@ -113,10 +113,9 @@ footer {
     font-family: $p-font-family;
     font-size: $p-font-size;
     line-height: $p-line-height;
-    margin: 0 150px;
+    margin: 0 5rem;
   }
   button {
-    margin-bottom: 15%;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -254,7 +253,6 @@ footer {
 }
 .home .banner-image img {
   width: 100%;
-  height: 100%;
 }
 
 // section: monthly-event
@@ -305,6 +303,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   .img-container {
     display: flex;
     justify-content: space-around;
