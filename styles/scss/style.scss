@@ -74,7 +74,6 @@ footer {
     }
   }
   .content-container {
-    // position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -90,7 +89,7 @@ footer {
     img {
       width: 45%;
       position: absolute;
-      top: 0;
+      bottom: -10%;
       right: 0;
     }
   }
@@ -134,6 +133,7 @@ footer {
 
 // section: news
 .home .news {
+  height: 100%;
   background-color: $spruce;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -350,7 +350,6 @@ footer {
   background-size: cover;
   background-position: center;
   .topBar {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -370,17 +369,16 @@ footer {
       color: $blue;
     }
     li:nth-child(4) a {
-      margin-right: 100px;
+      margin-right: 4rem;
     }
   }
   .content-container {
-    position: absolute;
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     h2 {
+      margin-bottom: 15%;
       width: 20%;
       font-size: $h2-font-size;
       line-height: $h2-line-height;
@@ -595,7 +593,6 @@ footer {
   background-size: cover;
   background-position: center;
   .topBar {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -615,17 +612,16 @@ footer {
       color: $blue;
     }
     li:nth-child(4) a {
-      margin-right: 100px;
+      margin-right: 4rem;
     }
   }
   .content-container {
-    position: absolute;
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     h2 {
+      margin-bottom: 15%;
       width: 40%;
       font-size: $h2-font-size;
       line-height: $h2-line-height;
