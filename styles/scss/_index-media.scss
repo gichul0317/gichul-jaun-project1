@@ -85,6 +85,9 @@
     button {
       padding: 5px 5px;
     }
+    .popup-window-1 {
+      width: 40%;
+    }
   }
 
   .home .news {
@@ -106,6 +109,10 @@
       button {
         margin-top: 20px;
       }
+      .popup-window-3 {
+        width: 50%;
+        right: 25%;
+      }
     }
     .text-box-2 {
       margin: 20px 20px 50px;
@@ -113,6 +120,10 @@
       padding: 0;
       button {
         margin-top: 20px;
+      }
+      .popup-window-3 {
+        width: 50%;
+        right: 25%;
       }
     }
   }
@@ -138,6 +149,10 @@
       button {
         margin-bottom: 20px;
         padding: 5px 5px;
+      }
+      .popup-window-2 {
+        width: 50%;
+        right: 25%;
       }
     }
   }
