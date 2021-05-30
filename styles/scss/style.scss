@@ -133,6 +133,7 @@ footer {
 
 // section: news
 .home .news {
+  position: relative;
   height: 100%;
   background-color: $spruce;
   display: grid;
@@ -257,6 +258,7 @@ footer {
 
 // section: monthly-event
 .home .monthly-event {
+  position: relative;
   background-color: $darkGrey;
   display: flex;
   justify-content: space-between;

@@ -1,19 +1,54 @@
-const firstSection = document.querySelector('.brief-intro');
-const secondSection = document.querySelector('.news');
-const thirdSection = document.querySelector('.monthly-event');
-const firstPopUpBtn = document.querySelectorAll('#popup-button-1');
-const secondPopUpBtn = document.querySelectorAll('#popup-button-2');
+'use strict';
 
-const firstPopUpWindow = document.createElement('div');
-firstPopUpWindow.innerHTML = `<h3>Lorem Ipsum</h3> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-nisi incidunt pariatur earum eveniet, hic, fugiat beatae molestiae
-quaerat explicabo est ad tenetur aliquam. Aspernatur dolores
-recusandae doloribus fugiat saepe!</p>`;
-firstPopUpWindow.classList.add('popup-window');
+const firstPopUpBtn = document.querySelector('#popup-button-1');
+const secondPopUpBtn = document.querySelector('#popup-button-2');
+const thirdPopUpBtn = document.querySelectorAll('#popup-button-3');
+const firstPopUpWindow = document.querySelector('.popup-window-1');
+const secondPopUpWindow = document.querySelector('.popup-window-2');
+const thirdPopUpWindow = document.querySelectorAll('.popup-window-3');
+const overlay = document.querySelector('.overlay');
+const firstCloseBtn = document.querySelector('.close-window-1');
+const secondCloseBtn = document.querySelector('.close-window-2');
+const thirdCloseBtn = document.querySelectorAll('.close-window-3');
 
-for (let i = 0; i < firstPopUpBtn.length; i++) {
-  firstPopUpBtn[i].addEventListener('click', function () {
-    // console.log('clicked');
-    firstSection.appendChild(firstPopUpWindow);
+firstPopUpBtn.addEventListener('click', function () {
+  firstPopUpWindow.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+});
+
+secondPopUpBtn.addEventListener('click', function () {
+  secondPopUpWindow.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+});
+
+for (let i = 0; i < thirdPopUpBtn.length; i++) {
+  thirdPopUpBtn[i].addEventListener('click', function () {
+    thirdPopUpWindow[i].classList.remove('hidden');
+    overlay.classList.remove('hidden');
   });
 }
+
+for (let i = 0; i < thirdCloseBtn.length; i++) {
+  thirdCloseBtn[i].addEventListener('click', function () {
+    thirdPopUpWindow[i].classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
+}
+
+firstCloseBtn.addEventListener('click', function () {
+  firstPopUpWindow.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+
+secondCloseBtn.addEventListener('click', function () {
+  secondPopUpWindow.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+
+overlay.addEventListener('click', function () {
+  firstPopUpWindow.classList.add('hidden');
+  secondPopUpWindow.classList.add('hidden');
+  thirdPopUpWindow[0].classList.add('hidden');
+  thirdPopUpWindow[1].classList.add('hidden');
+  overlay.classList.add('hidden');
+});

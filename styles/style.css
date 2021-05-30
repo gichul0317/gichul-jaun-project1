@@ -276,30 +276,94 @@ template {
   overflow: hidden;
 }
 
-.popup-window {
+.home {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-window-1 {
   position: absolute;
-  width: 80%;
+  width: 35%;
   background-color: #fff;
   color: #000;
   z-index: 20;
-  opacity: 0.95;
-  border: 2px solid #86e0f9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
 }
-.popup-window h3 {
-  margin-top: 0;
+.popup-window-1 h3 {
+  text-align: center;
+}
+
+.popup-window-2 {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 40%;
+  background-color: #fff;
+  color: #000;
+  z-index: 20;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.popup-window-2 h3 {
+  text-align: center;
+  text-transform: none !important;
+}
+
+.popup-window-3 {
+  position: absolute;
+  top: 15%;
+  right: 35%;
+  width: 30%;
+  background-color: #fff;
+  color: #000;
+  z-index: 20;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.popup-window-3 h3 {
+  text-align: center;
+}
+.popup-window-3 p {
+  text-align: left !important;
+}
+
+.close-window-1 {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  font-size: 3rem !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.close-window-2 {
+  position: absolute;
+  right: 2rem;
+  font-size: 3rem !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.close-window-3 {
+  position: absolute;
+  color: #000 !important;
+  right: 2rem;
+  font-size: 3rem !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 html {
@@ -440,6 +504,7 @@ footer {
 }
 
 .home .news {
+  position: relative;
   height: 100%;
   background-color: #0f614e;
   display: grid;
@@ -566,6 +631,7 @@ footer {
 }
 
 .home .monthly-event {
+  position: relative;
   background-color: #0c1423;
   display: -webkit-box;
   display: -ms-flexbox;
