@@ -12,7 +12,7 @@ const secondCloseBtn = document.querySelector('.close-window-2');
 const thirdCloseBtn = document.querySelectorAll('.close-window-3');
 
 const navBtn = document.querySelector('.nav-btn');
-const nav = document.querySelector('nav');
+const nav = document.querySelector('.active');
 
 firstPopUpBtn.addEventListener('click', function () {
   firstPopUpWindow.classList.remove('hidden');
@@ -57,5 +57,5 @@ overlay.addEventListener('click', function () {
 });
 
 navBtn.addEventListener('click', function () {
-  nav.classList.toggle('hidden');
+  nav.classList.toggle('active');
 });
