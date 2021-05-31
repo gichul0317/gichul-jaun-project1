@@ -11,6 +11,9 @@ const firstCloseBtn = document.querySelector('.close-window-1');
 const secondCloseBtn = document.querySelector('.close-window-2');
 const thirdCloseBtn = document.querySelectorAll('.close-window-3');
 
+const navBtn = document.querySelector('.nav-btn');
+const nav = document.querySelector('nav');
+
 firstPopUpBtn.addEventListener('click', function () {
   firstPopUpWindow.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -51,4 +54,8 @@ overlay.addEventListener('click', function () {
   thirdPopUpWindow[0].classList.add('hidden');
   thirdPopUpWindow[1].classList.add('hidden');
   overlay.classList.add('hidden');
+});
+
+navBtn.addEventListener('click', function () {
+  nav.classList.toggle('hidden');
 });
