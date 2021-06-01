@@ -1458,11 +1458,27 @@ footer {
     max-width: 480px;
   }
 
+  .blog .header-content {
+    padding: 1rem;
+  }
+  .blog .header-content .active {
+    display: none;
+  }
+  .blog .header-content .nav-btn {
+    display: block;
+  }
   .blog .header-content .topBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0;
+    padding: 1rem;
+  }
+  .blog .header-content .topBar a {
+    padding: 0.5rem;
   }
   .blog .header-content .topBar li:nth-child(4) a {
     margin-right: 0;
@@ -1476,7 +1492,7 @@ footer {
     display: none;
   }
   .blog .header-content .content-container h2 {
-    margin: 0 50px;
+    margin: 0 20px;
   }
 
   .blog .grid-wrapper {
