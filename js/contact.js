@@ -10,6 +10,9 @@ form.addEventListener('submit', function (event) {
   const userMail = document.querySelector('#user-email');
   const userComment = document.querySelector('#message');
   if (userName.value && userMail.value && userComment.value) {
+    userName.value = '';
+    userMail.value = '';
+    userComment.value = '';
     alert('Thank You. We will get back to you soon 😉😂');
   }
 });
