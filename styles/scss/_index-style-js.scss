@@ -13,14 +13,12 @@
   z-index: 20;
   border-radius: 5px;
   padding: 1rem;
-  div {
-    width: 100%;
-  }
   h3 {
     text-align: center;
   }
   p {
     margin: 0 !important;
+    text-align: center;
   }
 }
 .popup-window-2 {
@@ -36,6 +34,9 @@
   h3 {
     text-align: center;
     text-transform: none !important;
+  }
+  p {
+    text-align: center;
   }
 }
 .popup-window-3 {
@@ -53,12 +54,13 @@
     font-size: 1.5rem;
   }
   p {
-    text-align: left !important;
+    text-align: center !important;
   }
 }
 .close-window-1 {
   position: absolute;
-  top: 0;
+  margin: 0 !important;
+  top: 0.5rem;
   right: 1rem;
   font-size: 3rem !important;
   background-color: transparent !important;
@@ -66,7 +68,8 @@
 }
 .close-window-2 {
   position: absolute;
-  right: 2rem;
+  top: 0.5rem;
+  right: 1rem;
   font-size: 3rem !important;
   background-color: transparent !important;
   border: none !important;
@@ -74,7 +77,8 @@
 .close-window-3 {
   position: absolute;
   color: #000 !important;
-  top: 0;
+  margin: 0 !important;
+  top: 0.5rem;
   right: 1rem;
   font-size: 3rem !important;
   background-color: transparent !important;
@@ -86,7 +90,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .nav-btn {

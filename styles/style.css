@@ -293,14 +293,12 @@ template {
   border-radius: 5px;
   padding: 1rem;
 }
-.popup-window-1 div {
-  width: 100%;
-}
 .popup-window-1 h3 {
   text-align: center;
 }
 .popup-window-1 p {
   margin: 0 !important;
+  text-align: center;
 }
 
 .popup-window-2 {
@@ -317,6 +315,9 @@ template {
 .popup-window-2 h3 {
   text-align: center;
   text-transform: none !important;
+}
+.popup-window-2 p {
+  text-align: center;
 }
 
 .popup-window-3 {
@@ -335,12 +336,13 @@ template {
   font-size: 1.5rem;
 }
 .popup-window-3 p {
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .close-window-1 {
   position: absolute;
-  top: 0;
+  margin: 0 !important;
+  top: 0.5rem;
   right: 1rem;
   font-size: 3rem !important;
   background-color: transparent !important;
@@ -349,7 +351,8 @@ template {
 
 .close-window-2 {
   position: absolute;
-  right: 2rem;
+  top: 0.5rem;
+  right: 1rem;
   font-size: 3rem !important;
   background-color: transparent !important;
   border: none !important;
@@ -358,7 +361,8 @@ template {
 .close-window-3 {
   position: absolute;
   color: #000 !important;
-  top: 0;
+  margin: 0 !important;
+  top: 0.5rem;
   right: 1rem;
   font-size: 3rem !important;
   background-color: transparent !important;
@@ -371,7 +375,7 @@ template {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .nav-btn {
@@ -1561,12 +1565,26 @@ footer {
 
   .contact .header-content {
     height: 100%;
+    padding: 1rem;
+  }
+  .contact .header-content .active {
+    display: none;
+  }
+  .contact .header-content .nav-btn {
+    display: block;
   }
   .contact .header-content .topBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0;
+    padding: 1rem;
+  }
+  .contact .header-content .topBar a {
+    padding: 0.5rem;
   }
   .contact .header-content .topBar li:nth-child(4) a {
     margin-right: 0;
@@ -1577,7 +1595,7 @@ footer {
             justify-content: flex-start;
   }
   .contact .header-content .content-container h2 {
-    margin: 20px 50px;
+    margin: 20px 20px;
     text-align: left;
   }
   .contact .header-content .content-container form {
