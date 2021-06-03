@@ -42,14 +42,16 @@ footer {
 }
 
 // header: header-content
-.home .header-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.home header {
   background-image: url('../../under-the-sea-assets/header-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.home .header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   .topBar {
     display: flex;
     justify-content: flex-end;
@@ -96,9 +98,11 @@ footer {
 }
 
 // aside: brief-intro
+.home .aside-1 {
+  background-color: $darkGrey;
+}
 .home .brief-intro {
   height: 100%;
-  background-color: $darkGrey;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,10 +136,12 @@ footer {
 }
 
 // section: news
+.home .section-1 {
+  background-color: $spruce;
+}
 .home .news {
   position: relative;
   height: 100%;
-  background-color: $spruce;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -230,8 +236,10 @@ footer {
 }
 
 // aside: extra-info
-.home .extra-info {
+.home .aside-2 {
   background-color: $darkGrey;
+}
+.home .extra-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,9 +265,11 @@ footer {
 }
 
 // section: monthly-event
+.home .section-2 {
+  background-color: $darkGrey;
+}
 .home .monthly-event {
   position: relative;
-  background-color: $darkGrey;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -299,9 +309,11 @@ footer {
 }
 
 // section: gallery
+.home .section-3 {
+  background-color: $spruce;
+}
 .home .gallery {
   height: 100%;
-  background-color: $spruce;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,11 +329,13 @@ footer {
 }
 
 // footer: footer
+.home footer {
+  background-color: $blue;
+}
 .home footer .wrapper {
   height: 100%;
 }
 .home .footer {
-  background-color: $blue;
   text-align: center;
   p {
     margin: 0;
@@ -343,14 +357,16 @@ footer {
 }
 
 // header: header-content
-.blog .header-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.blog header {
   background-image: url('../../under-the-sea-assets/blog-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.blog .header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   .topBar {
     display: flex;
     justify-content: flex-end;
@@ -398,9 +414,11 @@ footer {
 }
 
 // main: grid-section
+.blog main {
+  background-color: $darkGrey;
+}
 .blog main .wrapper {
   height: 100%;
-  background-color: $darkGrey;
   position: relative;
 }
 
@@ -500,6 +518,16 @@ footer {
           line-height: $p-line-height;
         }
       }
+      .user-comments {
+        display: flex;
+        margin-bottom: 50px;
+        .user-text-box p {
+          margin: 0 25px 10px;
+          font-family: $p-font-family;
+          font-size: $p-font-size;
+          line-height: $p-line-height;
+        }
+      }
     }
     form {
       display: flex;
@@ -560,11 +588,13 @@ footer {
 }
 
 // footer: footer
+.blog footer {
+  background-color: $blue;
+}
 .blog footer .wrapper {
   height: 100%;
 }
 .blog .footer {
-  background-color: $blue;
   text-align: center;
   p {
     margin: 0;
@@ -578,6 +608,12 @@ footer {
 
 // --- contact.html starts here ---
 // contact (contact.html)
+.contact header {
+  background-image: url('../../under-the-sea-assets/contact-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .contact .wrapper {
   max-width: 1200px;
   width: 100%;
@@ -590,10 +626,6 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url('../../under-the-sea-assets/contact-header.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   .topBar {
     display: flex;
     justify-content: flex-end;
@@ -696,9 +728,11 @@ footer {
 }
 
 // main: section
+.contact main {
+  background-color: $darkGrey;
+}
 .contact .contact-info {
   height: 100%;
-  background-color: $darkGrey;
   .text-box {
     height: 100%;
     padding: 50px;
@@ -730,11 +764,13 @@ footer {
 }
 
 // footer: footer
+.contact footer {
+  background-color: $blue;
+}
 .contact footer .wrapper {
   height: 100%;
 }
 .contact .footer {
-  background-color: $blue;
   text-align: center;
   p {
     margin: 0;

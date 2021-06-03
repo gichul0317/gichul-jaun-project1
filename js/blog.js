@@ -1,23 +1,62 @@
 'use strict';
 
-const form = document.querySelector('form');
-const userName = document.querySelector('#user-name');
-const userMail = document.querySelector('#user-email');
-const userComment = document.querySelector('#comment');
-const navBtn = document.querySelector('.nav-btn');
-const nav = document.querySelector('.active');
+const app = {};
 
-navBtn.addEventListener('click', function () {
-  nav.classList.toggle('active');
-});
+app.form = document.querySelector('form');
+app.userName = document.querySelector('#user-name');
+app.userMail = document.querySelector('#user-email');
+app.userComment = document.querySelector('#comment');
+app.navBtn = document.querySelector('.nav-btn');
+app.nav = document.querySelector('.active');
+app.target = document.querySelector('.comments');
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  if (userName.value && userMail.value && userComment.value) {
-    const target = document.querySelector('.comment-2');
-    const div = document.createElement('div');
-    const p = document.createElement('p');
-    div.appendChild(document.createTextNode(userName.value));
-    target.appendChild(div);
-  }
-});
+app.navigation = function () {
+  app.navBtn.addEventListener('click', function () {
+    app.nav.classList.toggle('active');
+  });
+};
+
+app.createComment = function () {
+  const userCommentDiv = document.createElement('div');
+  const imgDiv = document.createElement('div');
+  const textDiv = document.createElement('div');
+  const pOne = document.createElement('p');
+  const pTwo = document.createElement('p');
+  const image = document.createElement('img');
+  userCommentDiv.setAttribute('class', 'user-comments');
+  imgDiv.setAttribute('class', 'user-image');
+  textDiv.setAttribute('class', 'user-text-box');
+  app.target.appendChild(userCommentDiv);
+  userCommentDiv.appendChild(imgDiv);
+  userCommentDiv.appendChild(textDiv);
+  pOne.innerHTML = `Wednesday June 2nd, 2021 by ${app.userName.value}`;
+  pTwo.innerHTML = `${app.userComment.value}`;
+  image.src = 'http://placekitten.com/94/92';
+  image.alt = 'user profile picture';
+  imgDiv.appendChild(image);
+  textDiv.appendChild(pOne);
+  textDiv.appendChild(pTwo);
+};
+
+app.postComment = function () {
+  app.form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (app.userName.value && app.userMail.value && app.userComment.value) {
+      app.createComment();
+      app.reset();
+    }
+  });
+};
+
+app.reset = function () {
+  app.userName.value = '';
+  app.userMail.value = '';
+  app.userComment.value = '';
+};
+
+app.init = function () {
+  app.navigation();
+  app.postComment();
+};
+
+app.init();

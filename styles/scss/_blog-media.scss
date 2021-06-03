@@ -123,6 +123,15 @@
             }
           }
         }
+        .user-comments {
+          flex-direction: column;
+          margin-bottom: 50px;
+          .user-text-box {
+            p {
+              margin: 25px 0;
+            }
+          }
+        }
       }
       form {
         .text-area {
